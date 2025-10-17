@@ -1,4 +1,6 @@
 import UserModel from "../models/userModel.js";
+import { hash } from "../utils/hashUtil.js";
+
 
 export const register = async (req, res) => {
     try{
@@ -18,6 +20,7 @@ export const register = async (req, res) => {
             message: "Berhasil register, silahkan login",
             data: null
         })
+        
     } catch (e){
         res.status(500).json({
             message: e.message,
@@ -25,4 +28,3 @@ export const register = async (req, res) => {
         })
     }
 }
-
