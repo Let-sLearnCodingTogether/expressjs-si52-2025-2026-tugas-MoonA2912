@@ -3,13 +3,13 @@ import{ExtractJwt, Strategy} from "passport-jwt"
 
 const opts = {
     jwtFromRequest : ExtractJwt.fromAuthHeaderAsBearerToken(),
-    secretOrKey: "JWT_SECRET_KEY"
+    secretOrKey: "JWT_SECRET"
 }
 
 passport.use(
     new Strategy(opts, async(payload, done)=>{
         try{
-            const user = await UserModel.findById({
+            const user = await UserModel.findOne({
                 email : payload.email
             })
             //jika user tidak ditemukan
@@ -27,3 +27,5 @@ passport.use(
         }
     })
 )
+
+export default passport;
