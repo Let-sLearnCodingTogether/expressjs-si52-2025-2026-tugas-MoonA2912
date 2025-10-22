@@ -5,7 +5,9 @@ export const createWish = async (req,res)=>{
         const request = req.body
 
         const response = await wishModel.create({
-            wish : request.wish
+            itemName : request.itemName,
+            price : request.price,
+            link : request.link
         })
 
         res.status(201).json({
@@ -43,7 +45,9 @@ export const updateWish = async(req,res)=>{
             })
         }
         const response = await wishModel.findByIdAndUpdate(id,{
-            wish :request.wish
+            wish :request.wish,
+            price : request.price,
+            link : request.link
         })
 
         if (!response){

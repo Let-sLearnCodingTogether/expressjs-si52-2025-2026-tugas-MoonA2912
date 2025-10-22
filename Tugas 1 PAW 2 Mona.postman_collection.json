@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "378ca402-8fe5-4b79-94d0-859a1437c427",
+		"name": "Tugas 1 PAW 2 Mona",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49266471",
+		"_collection_link": "https://gwweny29-9540312.postman.co/workspace/Monalisa's-Workspace~36af61e8-35bc-49ca-8ac9-e883cee09e05/collection/49266471-378ca402-8fe5-4b79-94d0-859a1437c427?action=share&source=collection_link&creator=49266471"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vbiIsImVtYWlsIjoibW9uQGdtYWlsLmNvbSIsImlhdCI6MTc2MTEwNjM3MywiZXhwIjoxNzYxMTA5OTczfQ.do-WvD9_4RwCEyUOfGQJGdE0-jX12bHfIMdPjYm4Oz4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mon@gmail.com\",\r\n    \"password\": \"mon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"m@gmail.com\",\r\n    \"password\": \"m aja\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Zjg3MWVhNjA1MjJhMTg0ZWUxZmRmMCIsInVzZXJuYW1lIjoibSIsImVtYWlsIjoibUBnbWFpbC5jb20iLCJpYXQiOjE3NjExMTI1OTAsImV4cCI6MTc2MTExNjE5MH0.JDX9rStvYiJEneOPPM1HE2Agky6Yh5ReWNpXru1M4Jk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Zjg3MWVhNjA1MjJhMTg0ZWUxZmRmMCIsInVzZXJuYW1lIjoibSIsImVtYWlsIjoibUBnbWFpbC5jb20iLCJpYXQiOjE3NjExMTI1OTAsImV4cCI6MTc2MTExNjE5MH0.JDX9rStvYiJEneOPPM1HE2Agky6Yh5ReWNpXru1M4Jk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemName\": \"Kulkas\",\r\n    \"price\": 15000000,\r\n    \"link\" : \"Ini link ,kulkas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/buat_wish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"buat_wish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Zjg3MWVhNjA1MjJhMTg0ZWUxZmRmMCIsInVzZXJuYW1lIjoibSIsImVtYWlsIjoibUBnbWFpbC5jb20iLCJpYXQiOjE3NjExMTI1OTAsImV4cCI6MTc2MTExNjE5MH0.JDX9rStvYiJEneOPPM1HE2Agky6Yh5ReWNpXru1M4Jk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": 12000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/wish/68f873232ee67a901a81d6d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"wish",
+						"68f873232ee67a901a81d6d2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Zjg3MWVhNjA1MjJhMTg0ZWUxZmRmMCIsInVzZXJuYW1lIjoibSIsImVtYWlsIjoibUBnbWFpbC5jb20iLCJpYXQiOjE3NjExMTI1OTAsImV4cCI6MTc2MTExNjE5MH0.JDX9rStvYiJEneOPPM1HE2Agky6Yh5ReWNpXru1M4Jk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/wish/68f8755a2ee67a901a81d6e8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"wish",
+						"68f8755a2ee67a901a81d6e8"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
