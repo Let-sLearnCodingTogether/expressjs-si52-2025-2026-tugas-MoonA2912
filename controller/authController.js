@@ -69,19 +69,12 @@ export const login = async (req, res) => {
 
 export const showProfile = async (req, res) => {
   try {
-    const id = req.params.id
-    const user = await UserModel.findById(id)
-
-    if (!user) {
-      return res.status(404).json({
-        message: "User tidak ditemukan",
-        data: null
-      });
-    }
+    const user = await User.findById(req.user.id).select("-password");
+    if (!user) return res.status(404).json({ message: "User tidak ditemukan" });
 
     res.status(200).json({
       message: "Data profile ditemukan",
-      data: user
+      data: user,
     });
   } catch (error) {
     res.status(500).json({
