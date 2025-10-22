@@ -9,7 +9,7 @@ api.post("/register", authController.register )
 api.post ('/login', authController.login)
 api.get('/profile', protect, authController.showProfile)
 
-api.post('/buat_wish', protect, wishController.createWish)
+api.post('/wish', protect, wishController.createWish)
 api.get("/wish", protect, wishController.Wishlist)
 api.put("/wish/:id",protect,wishController.updateWish)
 api.delete("/wish/:id",protect,wishController.deleteWish)
